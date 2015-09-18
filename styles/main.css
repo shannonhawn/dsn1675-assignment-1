@@ -41,6 +41,10 @@ header li {
   vertical-align: text-bottom;
 }
 
+li{
+  list-style-type: none;
+}
+
 h1 {
   text-align: center;
     margin: 0;
@@ -50,14 +54,27 @@ h1 {
     margin: 0.5em 0 0 0;
 }
 
+h2{
+  text-align:center;
+  font-weight:700;
+  display: block;
+  font-size: 22px;
+  padding: 0.75em 0 0 0;
+  border-top-style: solid;
+  border-top-width: thin;
+  clear: both;
+}
+
 h3{
   margin:0.25em 1em 0 1em;
 }
 
 nav {
-  clear:left;
-  display: block;
+  clear:both;
   margin:0;
+  overflow:hidden;
+  padding:1em 0 1em 0;
+  text-align:center;
 }
 
 .nav li{
@@ -68,10 +85,16 @@ nav {
 
 banner-text {
   bottom:1rem;
-  color:white;
+  color:yellow;
   position:absolute;
   text-align:center;
   width:100%;
+  font-size:13px
+}
+
+banner-image{
+  width:100%;
+  margin:0;
 }
 
 h3 {
@@ -79,15 +102,18 @@ h3 {
 }
 
 dt{
-  padding:0;
-  margin:0;
+  margin:0 1em 0 1em;
   float: left;
   clear: left;
 }
 
+dl{
+  list-style:none;
+  display:inline;
+}
+
 dd{
-  margin:0;
-  padding-left:0.5em;
+  margin:0 0 0 0.25em;
   float:left;
 }
 
@@ -109,6 +135,10 @@ dd{
   text-align: center;
   clear:both;
   padding: 1em 0 0 0;
+}
+
+.seven-wonders{
+  border-top-style:none;
 }
 
 .left-button, .right-button {
@@ -138,6 +168,14 @@ footer {
   border-top-style: solid;
   border-top-width: thin;
   margin: 0 1em 0 1em;
+}
+
+.this-week{
+  padding:0;
+}
+
+.tickets-text{
+  text-align:center;
 }
 
 .activities  {
