@@ -1,16 +1,13 @@
-html {
-  box-sizing: border-box;
-}
-
-*,*::before, *::after{
-box-sizing: inherit;
-}
-
 @-moz-viewport { width: device-width; scale: 1;}
 @-ms-viewport { width: device-width; scale: 1;}
 @-o-viewport { width: device-width; scale: 1;}
 @-webkit-viewport { width: device-width; scale: 1;}
 @viewport { width: device-width; scale: 1;}
+
+
+*,*::before, *::after{
+box-sizing: inherit;
+}
 
 html {
   box-sizing: border-box;
@@ -318,7 +315,7 @@ dd{
   width:50%;
   background-color:purple;
   border-style:solid;
-
+}
 
 @media only screen and (min-width: 20em){
 
