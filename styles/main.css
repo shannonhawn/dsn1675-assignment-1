@@ -44,7 +44,7 @@ a {
   font-size:1rem;
   font-weight: bold;
   border-radius:8px;
-  border-color:light-blue;
+  border-color:blue;
   margin:auto;
   padding:0.5em 0;
 }
@@ -67,7 +67,7 @@ h1 {
 
 .buy-button{
     width:15%;
-    margin-right:30;
+    margin-right:30%;
     padding:1em 0;
 }
 
@@ -80,13 +80,13 @@ h1 {
 
 .logo {
     width:15%;
-    margin:30%
+    margin:30%;
     float:left;
 }
 
 .buy-button{
     width:15%;
-    margin-right:30;
+    margin-right:30%;
     padding:1em 0;
 }
 
@@ -105,7 +105,7 @@ body {
 .nav {
   margin:0;
   padding:0;
-  background-color:dark-blue;
+  background-color:blue;
 }
 
 .nav a{
@@ -132,7 +132,7 @@ a:hover {
   .nav {
     margin:0;
     padding:0;
-    background-color:dark-blue;
+    background-color:blue;
     overflow:hidden;
   }
 
