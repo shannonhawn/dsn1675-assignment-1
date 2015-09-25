@@ -42,7 +42,7 @@ a {
   text-decoration: none;
   font-size:1rem;
   border-radius:8px;
-  background-color:blue;
+  background-color:purple;
   margin:auto;
   padding:0.5em 0;
   font-weight:bold;
@@ -94,9 +94,7 @@ h1 {
 body {
   font-size: 0.9rem;
 }
-
 }
-
 
 a:hover {
   color:red;
@@ -143,8 +141,6 @@ a:hover {
     }
 }
 
-
-
 figure {
   width:100%;
   position:relative;
@@ -180,7 +176,6 @@ banner-text {
   font-size:1.25rem;
 }
 }
-
 
 h2{
   clear: both;
@@ -312,9 +307,14 @@ dd{
 
 .right-button{
   float:left;
+  text-align: center;
   width:50%;
-  background-color:purple;
+  padding: 1em;
+  background-color:orange;
   border-style:solid;
+  border-width:thick;
+  border-color:white;
+  border-radius:13px;
 }
 
 @media only screen and (min-width: 20em){
@@ -427,5 +427,35 @@ footer {
 
   .footer-nav li{
     padding:1em 2.5em;
+  }
+}
+
+@media only screen and (min-width: 60em){
+  html{
+  font-size: 120%;
+  line-height: 1.5;
+}
+}
+
+@media only screen and (min-width: 90em){
+  html{
+  font-size: 130%;
+  line-height: 1.6;
+}
+}
+
+@media print{
+
+  nav{
+    display:none;
+  }
+
+  .buybutton{
+    display:none;
+  }
+
+  main a::after {
+    content: " (" attr(href) ")";
+    color: #999;
   }
 }
