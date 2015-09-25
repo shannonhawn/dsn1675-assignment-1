@@ -1,434 +1,591 @@
 html {
-  box-sizing: border-box;
+    box-sizing:border-box
 }
 
-*,*::before, *::after{
-box-sizing: inherit;
-}
-
-@-moz-viewport { width: device-width; scale: 1;}
-@-ms-viewport { width: device-width; scale: 1;}
-@-o-viewport { width: device-width; scale: 1;}
-@-webkit-viewport { width: device-width; scale: 1;}
-@viewport { width: device-width; scale: 1;}
-
-html {
-  box-sizing: border-box;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust:100%;
+*,::before,::after {
+    box-sizing:inherit
 }
 
 body {
-  font-size:0.75rem;
-  margin:0;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-header {
-text-align:center;
+    font-family:'Noto Sans',sans-serif;
+    margin:0
 }
 
 a {
-  text-decoration: none;
+    text-decoration:none;
+    color:#000;
+    display:block
 }
 
-.logo {
-  width:35%;
-  margin:0.5em;
+/* Header*/
+header {
+    margin:0 1em;
+    padding:15px 0 0
 }
 
-.buy-button{
-  text-align:center;
-  width:45%;
-  text-decoration: none;
-  font-size:1rem;
-  border-radius:8px;
-  background-color:blue;
-  margin:auto;
-  padding:0.5em 0;
-  font-weight:bold;
-}
-
-h1 {
-  text-align: center;
-  padding: 0.5em 0 0.5em 0;
-  margin: 0;
-  clear:both;
-}
-
-
-@media only screen and (min-width: 20em) {
-
-.logo {
-    float:left;
-    width:20%;
-    margin:1em 2em;
-}
-
-.buy-button{
-    float:right;
-    width:40%;
-    padding:0.5em;
-    margin:1em 2em;
-}
-
-}
-
-@media only screen and (min-width: 43em) {
-
-.logo {
-    width:15%;
-    margin-left:30%;
-}
-
-.buy-button{
-    margin-right:30%;
-    width:15%;
-    padding:1em;
-}
-
-h1 {
-  padding-top:0;
-  text-align: center;
-}
-
-body {
-  font-size: 0.9rem;
-}
-
-}
-
-
-a:hover {
-  color:red;
-}
-
-.nav a{
-  display:block;
-  padding: 0.25em 1em 0em 1em;
-}
-
-.nav {
-  padding:0;
-  margin:0;
-  background-color:blue;
-}
-
-.nav li{
-  list-style-type:none;
-  margin:0;
-  padding: 0.5em 0 0.5em 0;
-  text-align:center;
-  display:block;
-  width:100%;
-}
-
-
-@media only screen and (min-width: 20em) {
-
-  .nav {
-    margin:0;
-    overflow:hidden;
-    clear:both;
-    background-color:grey;
-  }
-
-  .nav li{
-    float:left;
-    width:25%;
-  }
-
-
-  .nav a{
-    padding: 0.5em;
-    }
-}
-
-
-
-figure {
-  width:100%;
-  position:relative;
-  margin:0;
-}
-
-banner-image{
-  width:100%;
-  margin:0;
-}
-
-banner-text {
-  position: absolute;
-  bottom:1rem;
-  color:yellow;
-  text-align:center;
-  width:100%;
-  text-shadow: -1px 1px 4px rgba(0,0,0,0.8), 1px 1px 4px rgba(0,0,0,0.8);
-}
-
-
-@media only screen and (min-width:20em){
-
-banner-text {
-  padding:0 3em;
-}
-}
-
-/*-------media screen 52em------*/
-@media only screen and (min-width:52em){
-
-banner-text {
-  font-size:1.25rem;
-}
-}
-
-
-h2{
-  clear: both;
-  text-align:center;
-  font-weight:700;
-  padding: 0.75em 0 0.25em 0;
-  display: block;
-  margin:0;
-}
-
-.seven-wonders{
-  border-top-style:none;
-}
-
-.wonders{
-  width:100%;
-  padding:1em 0 0 0;
-  overflow:hidden;
-  margin:0 1em 0 1em;
-}
-
-h3{
-  margin:0.25em 1em 0 1em;
-}
-
-dl{
-  list-style:none;
-  display:inline;
-}
-
-dt{
-  float: left;
-  clear: left;
-  margin:0 1em 0 1em;
-}
-
-dd{
-  float:left;
-  margin:0 0 0 0.25em;
-}
-
-.wonders-link{
-  text-align: center;
-  clear:both;
-  padding: 1em 0 0 0;
-}
-
-
-@media only screen and (min-width: 30em){
-
-  .wonders{
-    width:60%;
-    padding:0.5em 0.5em 0em 0.5em;
-  }
-
-  .wonders-link{
-    padding-top: 0.5em;
-  }
-
-  .wonders-group{
+header ul {
+    display:inline-block;
+    list-style-type:none;
     width:100%;
-    text-align:center;
-  }
-
-  dt{
-    float: none;
-    padding: 1em 0 0 0;
-  }
-
-  dd{
-    float:none;
-  }
-
-  .list {
-      float: left;
-      width: 33.33%;
-    }
-
-}
-
-
-@media only screen and (min-width: 52em){
-
-  .wonders{
-    width:50%;
-  }
-
-  dl{
-    width:50%
-  }
-
-  .wonders-group{
-    text-align:left;
-  }
-
-  dt{
-  margin:0;
-  }
-
-  dd{
+    padding:0;
     margin:0;
-  }
+    position:relative
 }
 
-
-.tickets-text{
-  text-align:center;
-  padding:0.5em 0.75em 0.5em 0.75em;
-  margin:0;
-}
-
-.h3-tix{
-  padding:1em 0 0 0;
-  text-align:center;
-  clear:both;
-}
-
-.left-button{
-  float:left;
-  text-align: center;
-  width:50%;
-  padding: 1em;
-  background-color:orange;
-  border-style:solid;
-  border-width:thick;
-  border-color:white;
-  border-radius:13px;
-}
-
-.right-button{
-  float:left;
-  width:50%;
-  background-color:purple;
-  border-style:solid;
-
-
-@media only screen and (min-width: 20em){
-
-  .tickets-text{
-    padding:0.5em 3em;
-  }
-}
-
-
-@media only screen and (min-width: 30em){
-
-.left-button{
+header li {
+    text-align:center;
     float:left;
-    width:30%;
-    margin:0 4em;
+    display:block;
+    vertical-align:middle
 }
 
-.right-button{
-    float:left;
-    width:30%;
-    margin:0 4em;
+header li:nth-of-type(1),.header ul li:nth-of-type(3) {
+    max-width:20%;
+    min-width:3.125em;
+    display:block;
+    vertical-align:middle
 }
 
-.tickets-text{
-  padding:0.5em 5em;
+header li:nth-of-type(2) {
+    width:60%;
+    margin:0;
+    position:absolute;
+    bottom:0;
+    left:20%
 }
 
+header li:nth-of-type(3) {
+    padding:.5em;
+    margin:0 0 .5em;
+    position:absolute;
+    bottom:0;
+    left:80%;
+    width:20%;
+    border-radius:20px;
+    background-color:#e2e2e2
 }
 
-
-
-.now-playing {
-  margin-top:1em;
+header li:nth-of-type(3):hover {
+    background-color:#7A8B8B
 }
 
-banner-2{
-  margin: 1em 0;
+header img {
+    width:100%;
+    padding:10% 10% 0;
+    margin-bottom:.5em
 }
 
-banner-text a{
-  color:white;
-  text-decoration: underline;
+h1 {
+    font-size:24px;
+    margin:.5em
 }
 
-
-.this-week{
-  padding: 0;
+nav {
+    clear:left;
+    display:block
 }
 
-.this-week h3{
-  padding: 0.5em 0 0 0;
-}
-
-.activities {
-  padding: 0 0 0 2em;
-}
-
-.activities li{
-  list-style-type:none;
-  padding-right:2em;
-}
-
-
-
-footer {
-  padding:1em;
-  background-color:orange;
-}
-
-.contact {
-  padding: 0;
-}
-
-.contact li {
-  list-style-type:none;
-}
-
-.footer-nav {
-  margin: 0;
-  text-align:left;
-  padding: 0;
-  list-style-type:none;
-}
-
-
-@media only screen and (min-width:43em){
-
-  footer-1 {
-    width:40%;
-    float:left;
+nav ol {
     margin:0;
     padding:0;
-  }
-
-  .footer-nav {
-    clear:both;
-    margin: 0;
-    padding: 0;
-  }
-
-  footer-nav li {
-    display: inline-block;
-    padding: 1em;
-  }
+    width:100%
 }
 
+nav li {
+    background:#d2d2d2;
+    width:25%;
+    text-align:center;
+    float:left;
+    list-style-type:none;
+    margin:0;
+    font-size:.8em;
+    padding:.5em 0
+}
 
-@media only screen and (min-width:43em){
+nav ul li:hover {
+    background:#FFF
+}
 
-  .footer-nav li{
-    padding:1em 2.5em;
-  }
+/*Hero Banner*/
+.hero-div {
+    margin:0;
+    padding:0;
+    display:block;
+    clear:both
+}
+
+figure {
+    display:block;
+    padding:0;
+    margin:0;
+    position:relative
+}
+
+img {
+    width:100%;
+    padding:0;
+    margin:0;
+    display:block
+}
+
+figcaption {
+    position:absolute;
+    bottom:0;
+    left:10%;
+    background:rgba(255,255,255,0.6);
+    width:80%;
+    padding:0 1em 1em;
+    text-align:center;
+    border-radius:10px 10px 0 0;
+    color:#000;
+    line-height:1em
+}
+
+figcaption h2 {
+    padding:.5em 0 0;
+    margin:0;
+    font-size:1em;
+    line-height:1em
+}
+
+figcaption p {
+    font-size:.8em;
+    padding:0;
+    margin:0
+}
+
+/*Seven Wonders*/
+.main img,.theatre img {
+    margin:0;
+    padding:1em 1em 0;
+    display:block;
+    width:100%;
+    border-top:1px solid #d3d3d3
+}
+
+.main h2 {
+    color:#1B2833;
+    background-color:#e2e2e2;
+    margin:0;
+    padding:.5em;
+    text-align:center
+}
+
+.main p {
+    clear:left;
+    max-width:280px;
+    text-align:center;
+    border-radius:10px;
+    background-color:#dcdcdc;
+    margin:1em;
+    float:left;
+    padding:.5em
+}
+
+.main p:hover,nav li:hover {
+/*    background-color: #549ABA;;
+    color: #fff;*/
+    background-color:#7A8B8B
+}
+
+.subtitle {
+    padding:0
+}
+
+.main h3 {
+    margin:0 0 0 1em
+}
+
+.main dl {
+    padding:0;
+    margin:0 1em
+}
+
+dt {
+    padding:0;
+    margin:0;
+    float:left;
+    clear:left
+}
+
+dd {
+    float:left;
+    margin:0;
+    padding-left:.5em
+}
+
+/*Area BUY*/
+.buy {
+    margin:0;
+    text-align:center;
+    background-color:#d3d3d3;
+    clear:left;
+    overflow:hidden;
+    display:block
+}
+
+.buy p {
+    padding:1em
+}
+
+.buy h2 {
+    text-align:center;
+    clear:both;
+    background-color:#e2e2e2;
+    margin:0;
+    padding:.5em
+}
+
+.buy ul {
+    display:block;
+    margin:0 auto 2em;
+    width:70%;
+    overflow:hidden
+}
+
+.buy li {
+    float:left;
+    list-style-type:none;
+    background-color:#fff;
+    border-radius:50px;
+    width:48%;
+    padding:1em;
+    margin:0 1%
+}
+
+.buy li:hover {
+    background-color:#7A8B8B
+}
+
+/*Theatre*/
+.theatre {
+    padding:0;
+    margin:0
+}
+
+.theatre img {
+    width:100%;
+    padding:0
+}
+
+.theatre figure {
+    width:100%;
+    margin:0;
+    padding:0
+}
+
+.theatre figcaption {
+    position:absolute;
+    bottom:0;
+    padding:1em
+}
+
+.theatre h2 {
+    text-align:center
+}
+
+.theatre a {
+    text-transform:uppercase
+}
+
+.theatre a:hover {
+    color:red;
+    font-weight:700
+}
+
+figure .headline-theatre {
+    font-weight:700
+}
+
+/*Footer*/
+footer {
+    padding:.5em 1em;
+    background-color:#7A8B8B;
+    clear:both
+}
+
+footer ol {
+    display:list-item;
+    list-style-type:none;
+    padding:0
+}
+
+footer a:hover {
+    color:#fff
+}
+
+.footaddress {
+    padding:1em 0;
+    font-weight:700;
+    color:#fff
+}
+
+/*Activities*/
+.activities {
+    padding:0 1em
+}
+
+.activities dd:nth-of-type(even) {
+    padding-bottom:1em;
+    padding-top:.5em
+}
+
+.activities dd:nth-of-type(odd) {
+    padding-top:.5em
+}
+
+.activities dt,.activities dd {
+    padding:0;
+    margin:0;
+    width:100%
+}
+
+.activities dt {
+    width:100%;
+    border-top:1px solid #d3d3d3;
+    margin-top:0;
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:700;
+    font-size:1.2em;
+    background-color:#e1e1e1
+}
+
+.activities h2 {
+    clear:left;
+    text-align:center;
+    text-transform:uppercase;
+    display:block
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 450px) {
+nav li {
+    width:50%
+}
+
+header li {
+    margin:1em 0 0
+}
+}
+
+/*Hi Thomas!  I was having an issue trying to make min width work because I am
+ working backward on this (big to small) and I found that the only efficient way I could
+ work around it is to use max-width instead of min-width.  Normally I would
+ design small to large and start at 0em for min-width, but my brain is not working around that. */
+
+@media only screen and (max-width: 20em) {
+    header {
+        margin:0;
+        padding:0
+    }
+
+    header ul {
+        display:block;
+        list-style-type:none;
+        width:100%;
+        padding:0;
+        margin:0
+    }
+
+    header li {
+        text-align:center;
+        float:none;
+        margin:0 auto
+    }
+
+    header li:nth-of-type(1),.header ul li:nth-of-type(3) {
+        width:100%
+    }
+
+    header li:nth-of-type(2) {
+        width:100%;
+        margin:0;
+        position:static
+    }
+
+    header li:nth-of-type(3) {
+        padding:.5em;
+        margin:.5em auto;
+        position:static;
+        width:90%;
+        border-radius:20px;
+        background-color:#e2e2e2
+    }
+
+    header img {
+        display:block;
+        min-width:50px;
+        margin:0 auto;
+        padding:1em 0 0
+    }
+
+    h1 {
+        font-size:1.5em;
+        margin:.5em
+    }
+
+    /*Hero Banner*/
+    figcaption {
+        position:static;
+        width:100%;
+        text-align:left;
+        border-radius:0;
+        color:#000;
+        line-height:1.2em
+    }
+
+    figcaption h2 {
+        padding-bottom:1em;
+        text-align:center
+    }
+
+    nav li {
+        background:#d2d2d2;
+        width:100%;
+        text-align:center;
+        float:left;
+        list-style-type:none
+    }
+
+    /*Buy/Memebership*/
+    .buy {
+        margin:0;
+        text-align:center;
+        clear:left
+    }
+
+    .buy p {
+        text-align:left
+    }
+
+    .buy h2 {
+        text-align:center;
+        clear:both;
+        background-color:#e2e2e2;
+        margin:0;
+        padding:.5em
+    }
+
+    .buy ul {
+        display:block;
+        margin:0 auto 2em;
+        width:90%;
+        margin:1em;
+        padding:0
+    }
+
+    .buy li {
+        float:none;
+        width:100%;
+        padding:1em;
+        margin:0 auto 1em
+    }
+
+    /*Theatre*/
+    .theatre figcaption {
+        position:static;
+        border-radius:0;
+        width:100%
+    }
+
+    .theatre h2 {
+        text-align:center;
+        display:block
+    }
+
+    .theatre a {
+        text-align:center;
+        background:#d3d3d3;
+        padding:1em;
+        border-radius:50px;
+        display:block
+    }
+}
+
+@media only screen and (min-width: 28em) {
+    header li:nth-of-type(2) {
+        font-size:1em;
+        margin-top:1em
+    }
+
+    nav li {
+        width:50%
+    }
+
+    header li {
+        margin:1em 0 0
+    }
+}
+
+@media only screen and (min-width:37em) {
+    header li:nth-of-type(2) {
+        font-size:1em;
+        margin-top:0
+    }
+
+    header {
+        margin:0;
+        padding:0
+    }
+
+    header li:nth-of-type(1) {
+        width:50%;
+        padding:0;
+        margin:0
+    }
+
+    header li:nth-of-type(3) {
+        width:10%;
+        margin:.5em
+    }
+
+    .main img {
+        margin:0 0 1em;
+        padding:1em 1em 0;
+        width:50%;
+        float:left;
+        border:none;
+        clear:left
+    }
+
+    .main dl,.main h3 {
+        width:50%;
+        float:left;
+        padding:0;
+        margin:1em 0 0
+    }
+
+    .main p {
+        float:left;
+        clear:none;
+        width:30%;
+        margin:1.33em 0
+    }
+
+    nav {
+        clear:left;
+        display:block
+    }
+
+    nav ol {
+        margin:0;
+        padding:0;
+        width:100%
+    }
+
+    nav li {
+        background:#d2d2d2;
+        width:25%;
+        text-align:center;
+        float:left;
+        list-style-type:none;
+        margin:0;
+        font-size:.8em;
+        padding:.5em 0
+    }
+
+    nav ul li:hover {
+        background:#FFF
+    }
 }
