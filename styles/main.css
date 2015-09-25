@@ -177,7 +177,7 @@ banner-text {
 }
 
 /*-------media screen 52em------*/
-@media only screen and (min-width:52em)
+@media only screen and (min-width:52em){
 
 banner-text {
   color:yellow;
@@ -258,51 +258,78 @@ dd{
 @media only screen and (min-width: 52em){
 
   .wonders{
-    width:60%;
-    padding:0.5 0 0 0;
+    width:50%;
   }
 
   .wonders-link{
-    padding-top: 0.5em;
+    text-align:left;
   }
 
   dt{
-    float: none;
-    padding: 1em 0 0 0;
+  margin:0;
   }
 
   dd{
-    float:none;
+    margin:0;
+  }
+}
+/*------------*/
+
+.tickets-text{
+  text-align:center;
+}
+
+.left-button{
+  float:left;
+  width:50%;
+  background-color:purple;
+  border-style:solid;
+}
+
+.right-button{
+  float:left;
+  width:50%;
+  background-color:purple;
+  border-style:solid;
+
+/*-------media screen 25em------*/
+@media only screen and (min-width: 25em){
+
+  .tickets-text{
+    padding:0.5em 3em;
   }
 }
 
+/*-------media screen 32em------*/
+@media only screen and (min-width: 32em){
 
-
-header ul {
-  display: inline-block;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  position: relative;
+.tickets-text{
+    text-align:center;
 }
 
-header li {
-  float:left;
-  text-align: center;
-  vertical-align: text-bottom;
+.left-button{
+    float:left;
+    width:30%;
+    margin:0 4em;
 }
 
-li{
-  list-style-type: none;
+.right-button{
+    float:left;
+    width:30%;
+    margin:0 4em;
+}
+}
+/*-------------*/
+
+.this-week{
+  padding:0;
 }
 
-.left-button, .right-button {
-  float: left;
-  text-align: center;
-  width: 50%;
-  padding: 0 0 1em 0;
+.activities  {
+  padding: 0 0 0 2em;
 }
 
+/*-------------*/
 
 .footer-nav {
   margin: 0;
@@ -316,30 +343,22 @@ footer {
   margin: 0 1em 0 1em;
 }
 
-.this-week{
-  padding:0;
-}
-
-.tickets-text{
-  text-align:center;
-}
-
-.activities  {
-  padding: 0 0 0 2em;
-}
-
 .contact {
   padding: 0;
 }
+/*-------------*/
 
-@media only screen and (min-width:25em){
-
-}
-
-@media only screen and (min-width:32em){
-
-}
-
+/*-------media screen 50em------*/
 @media only screen and (min-width:50em){
+  .footer-nav {
+    margin: 0;
+    text-align:left;
+    padding: 0;
+  }
 
+  footer {
+    border-top-style: solid;
+    border-top-width: thin;
+    margin: 0 1em 0 1em;
+  }
 }
