@@ -108,10 +108,175 @@ body {
   background-color:dark-blue;
 }
 
+.nav a{
+  display:block;
+  padding: 0.25em 1em 0em 1em
+}
+
+.nav li{
+  margin:0;
+  display:block;
+  text-align:center;
+  width:100%;
+  list-style-type:none;
+}
 
 a:hover {
   color:red;
 }
+
+
+/*-------media screen 25em------*/
+@media only screen and (min-width: 25em) {
+
+  .nav {
+    margin:0;
+    padding:0;
+    background-color:dark-blue;
+    overflow:hidden;
+  }
+
+  .nav a{
+    padding: 0em;
+  }
+
+  .nav li{
+    float:left;
+    width:30%;
+  }
+
+/*-------------*/
+
+figure {
+  width:100%;
+  position:relative;
+  margin:0;
+}
+
+banner-image{
+  width:100%;
+  margin:0;
+}
+
+banner-text {
+  bottom:1rem;
+  color:yellow;
+  position:absolute;
+  text-align:center;
+  width:100%;
+  font-size:1rem;
+}
+
+/*-------media screen 25em------*/
+@media only screen and (min-width:25em){
+
+banner-text {
+  color:yellow;
+  font-size:1rem;
+}
+}
+
+/*-------media screen 52em------*/
+@media only screen and (min-width:52em)
+
+banner-text {
+  color:yellow;
+  font-size:1.25rem;
+}
+}
+/*-------------*/
+
+h2{
+  text-align:center;
+  font-weight:700;
+  display: block;
+  font-size: 22px;
+  padding: 0.75em 0 0 0;
+  clear: both;
+}
+
+.seven-wonders{
+  border-top-style:none;
+}
+
+.wonders{
+  width:100%;
+  padding:1em 0 0 0;
+  overflow:hidden;
+  margin:0 1em 0 1em;
+}
+
+h3{
+  margin:0.25em 1em 0 1em;
+}
+
+dl{
+  list-style:none;
+  display:inline;
+}
+
+dt{
+  margin:0 1em 0 1em;
+  float: left;
+  clear: left;
+}
+
+dd{
+  margin:0 0 0 0.25em;
+  float:left;
+}
+
+.wonders-link{
+  text-align: center;
+  clear:both;
+  padding: 1em 0 0 0;
+}
+
+/*-------media screen 32em------*/
+@media only screen and (min-width: 32em){
+
+  .wonders{
+    width:60%;
+    padding:0.5 0 0 0;
+  }
+
+  .wonders-link{
+    padding-top: 0.5em;
+  }
+
+  dt{
+    float: none;
+    padding: 1em 0 0 0;
+  }
+
+  dd{
+    float:none;
+  }
+}
+
+/*-------media screen 52em------*/
+@media only screen and (min-width: 52em){
+
+  .wonders{
+    width:60%;
+    padding:0.5 0 0 0;
+  }
+
+  .wonders-link{
+    padding-top: 0.5em;
+  }
+
+  dt{
+    float: none;
+    padding: 1em 0 0 0;
+  }
+
+  dd{
+    float:none;
+  }
+}
+
+
 
 header ul {
   display: inline-block;
@@ -131,92 +296,11 @@ li{
   list-style-type: none;
 }
 
-
-
-h2{
-  text-align:center;
-  font-weight:700;
-  display: block;
-  font-size: 22px;
-  padding: 0.75em 0 0 0;
-  border-top-style: solid;
-  border-top-width: thin;
-  clear: both;
-}
-
-h3{
-  margin:0.25em 1em 0 1em;
-}
-
-
-.nav li{
-  float:left;
-  width:25%;
-  list-style-type:none;
-}
-
-banner-text {
-  bottom:1rem;
-  color:yellow;
-  position:absolute;
-  text-align:center;
-  width:100%;
-  font-size:13px
-}
-
-banner-image{
-  width:100%;
-  margin:0;
-}
-
-h3 {
-  margin: 0.25em 1em 0 1em;
-}
-
-dt{
-  margin:0 1em 0 1em;
-  float: left;
-  clear: left;
-}
-
-dl{
-  list-style:none;
-  display:inline;
-}
-
-dd{
-  margin:0 0 0 0.25em;
-  float:left;
-}
-
-.wonders{
-  width:100%;
-  padding:1em 0 0 0;
-  overflow:hidden;
-  margin:0 1em 0 1em;
-}
-
-.wonders-link{
-  text-align: center;
-  clear:both;
-  padding: 1em 0 0 0;
-}
-
-.seven-wonders{
-  border-top-style:none;
-}
-
 .left-button, .right-button {
   float: left;
   text-align: center;
   width: 50%;
   padding: 0 0 1em 0;
-}
-
-figure {
-  width:100%;
-  position:relative;
-  margin:0;
 }
 
 
