@@ -1,13 +1,16 @@
-
-@-moz-viewport { width: device-width; scale:1; }
-@-ms-viewport { width: device-width; scale:1; }
-@-o-viewport { width: device-width; scale:1; }
-@webkit-viewport { width: device-width; scale:1; }
-@viewport { width: device-width; scale:1; }
+html {
+  box-sizing: border-box;
+}
 
 *,*::before, *::after{
 box-sizing: inherit;
 }
+
+@-moz-viewport { width: device-width; scale:1;}
+@-ms-viewport { width: device-width; scale:1;}
+@-o-viewport { width: device-width; scale:1;}
+@webkit-viewport { width: device-width; scale:1;}
+@viewport { width: device-width; scale:1;}
 
 html {
   box-sizing: border-box;
@@ -18,14 +21,13 @@ html {
 }
 
 body {
-  font-size:12px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-size:0.75rem;
   margin:0;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 header {
-  margin: 0 1em;
-  padding: 15px 0 0;
+text-align:center;
 }
 
 a {
@@ -38,112 +40,115 @@ a {
 }
 
 .buy-button{
-  width:45%;
   text-align:center;
+  width:45%;
   text-decoration: none;
   font-size:1rem;
-  font-weight: bold;
   border-radius:8px;
-  border-color:blue;
+  background-color:blue;
   margin:auto;
   padding:0.5em 0;
+  font-weight:bold;
 }
 
 h1 {
   text-align: center;
-  margin: 0;
   padding: 0.5em 0 0.5em 0;
+  margin: 0;
   clear:both;
 }
 
-/*-------media screen 25em------*/
-@media only screen and (min-width: 25em) {
+/*-------media screen 20em------*/
+@media only screen and (min-width: 20em) {
 
 .logo {
-    width:25%;
-    margin:1em 2em;
     float:left;
+    width:20%;
+    margin:1em 2em;
 }
 
 .buy-button{
-    width:15%;
-    margin-right:30%;
-    padding:1em 0;
+    float:right;
+    width:40%;
+    padding:0.5em;
+    margin:1em 2em;
 }
 
 }
 /*-------------*/
 
 
-/*-------media screen 32em------*/
-@media only screen and (min-width: 32em) {
+/*-------media screen 43em------*/
+@media only screen and (min-width: 43em) {
 
 .logo {
     width:15%;
-    margin:30%;
-    float:left;
+    margin-left:30%;
 }
 
 .buy-button{
-    width:15%;
     margin-right:30%;
-    padding:1em 0;
+    width:15%;
+    padding:1em;
 }
 
 h1 {
-  text-align: center;
   padding-top:0;
+  text-align: center;
 }
 
 body {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
 }
 /*-------------*/
-
-.nav {
-  margin:0;
-  padding:0;
-  background-color:blue;
-}
-
-.nav a{
-  display:block;
-  padding: 0.25em 1em 0em 1em
-}
-
-.nav li{
-  margin:0;
-  display:block;
-  text-align:center;
-  width:100%;
-  list-style-type:none;
-}
 
 a:hover {
   color:red;
 }
 
+.nav a{
+  display:block;
+  padding: 0.25em 1em 0em 1em;
+}
 
-/*-------media screen 25em------*/
-@media only screen and (min-width: 25em) {
+.nav {
+  padding:0;
+  margin:0;
+  background-color:blue;
+}
+
+.nav li{
+  list-style-type:none;
+  margin:0;
+  padding: 0.5em 0 0.5em 0;
+  text-align:center;
+  display:block;
+  width:100%;
+}
+
+
+/*-------media screen 20em------*/
+@media only screen and (min-width: 20em) {
 
   .nav {
     margin:0;
-    padding:0;
-    background-color:blue;
     overflow:hidden;
-  }
-
-  .nav a{
-    padding: 0em;
+    clear:both;
+    background-color:grey;
   }
 
   .nav li{
     float:left;
-    width:30%;
+    width:25%;
   }
+
+
+  .nav a{
+    padding: 0.5em;
+    }
+}
 
 /*-------------*/
 
@@ -159,20 +164,19 @@ banner-image{
 }
 
 banner-text {
+  position: absolute;
   bottom:1rem;
   color:yellow;
-  position:absolute;
   text-align:center;
   width:100%;
-  font-size:1rem;
+  text-shadow: -1px 1px 4px rgba(0,0,0,0.8), 1px 1px 4px rgba(0,0,0,0.8);
 }
 
-/*-------media screen 25em------*/
-@media only screen and (min-width:25em){
+/*-------media screen 20em------*/
+@media only screen and (min-width:20em){
 
 banner-text {
-  color:yellow;
-  font-size:1rem;
+  padding:0 3em;
 }
 }
 
@@ -180,19 +184,18 @@ banner-text {
 @media only screen and (min-width:52em){
 
 banner-text {
-  color:yellow;
   font-size:1.25rem;
 }
 }
 /*-------------*/
 
 h2{
+  clear: both;
   text-align:center;
   font-weight:700;
+  padding: 0.75em 0 0.25em 0;
   display: block;
-  font-size: 22px;
-  padding: 0.75em 0 0 0;
-  clear: both;
+  margin:0;
 }
 
 .seven-wonders{
@@ -216,14 +219,14 @@ dl{
 }
 
 dt{
-  margin:0 1em 0 1em;
   float: left;
   clear: left;
+  margin:0 1em 0 1em;
 }
 
 dd{
-  margin:0 0 0 0.25em;
   float:left;
+  margin:0 0 0 0.25em;
 }
 
 .wonders-link{
@@ -232,16 +235,21 @@ dd{
   padding: 1em 0 0 0;
 }
 
-/*-------media screen 32em------*/
-@media only screen and (min-width: 32em){
+/*-------media screen 30em------*/
+@media only screen and (min-width: 30em){
 
   .wonders{
     width:60%;
-    padding:0.5 0 0 0;
+    padding:0.5em 0.5em 0em 0.5em;
   }
 
   .wonders-link{
     padding-top: 0.5em;
+  }
+
+  .wonders-group{
+    width:100%;
+    text-align:center;
   }
 
   dt{
@@ -252,6 +260,12 @@ dd{
   dd{
     float:none;
   }
+
+  .d-list {
+      float: left;
+      width: 33.33%;
+    }
+
 }
 
 /*-------media screen 52em------*/
@@ -261,7 +275,11 @@ dd{
     width:50%;
   }
 
-  .wonders-link{
+  dl{
+    width:50%
+  }
+
+  .wonders-group{
     text-align:left;
   }
 
@@ -277,13 +295,26 @@ dd{
 
 .tickets-text{
   text-align:center;
+  padding:0.5em 0.75em 0.5em 0.75em;
+  margin:0;
+}
+
+.h3-tix{
+  padding:1em 0 0 0;
+  text-align:center;
+  clear:both;
 }
 
 .left-button{
   float:left;
+  text-align: center;
   width:50%;
-  background-color:purple;
+  padding: 1em;
+  background-color:orange;
   border-style:solid;
+  border-width:thick;
+  border-color:white;
+  border-radius:13px;
 }
 
 .right-button{
@@ -292,8 +323,8 @@ dd{
   background-color:purple;
   border-style:solid;
 
-/*-------media screen 25em------*/
-@media only screen and (min-width: 25em){
+/*-------media screen 20em------*/
+@media only screen and (min-width: 20em){
 
   .tickets-text{
     padding:0.5em 3em;
@@ -301,11 +332,7 @@ dd{
 }
 
 /*-------media screen 32em------*/
-@media only screen and (min-width: 32em){
-
-.tickets-text{
-    text-align:center;
-}
+@media only screen and (min-width: 30em){
 
 .left-button{
     float:left;
@@ -318,15 +345,44 @@ dd{
     width:30%;
     margin:0 4em;
 }
+
+.tickets-text{
+  padding:0.5em 5em;
+}
+
+}
+
+/*-------------*/
+
+.now-playing {
+  margin-top:1em;
+}
+
+banner-2{
+  margin: 1em 0;
+}
+
+banner-text a{
+  color:white;
+  text-decoration: underline;
 }
 /*-------------*/
 
 .this-week{
-  padding:0;
+  padding: 0;
 }
 
-.activities  {
+.this-week h3{
+  padding: 0.5em 0 0 0;
+}
+
+.activities {
   padding: 0 0 0 2em;
+}
+
+.banner-text a{
+  color:white;
+  text-decoration:underline;
 }
 
 /*-------------*/
