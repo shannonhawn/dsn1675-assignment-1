@@ -6,11 +6,11 @@ html {
 box-sizing: inherit;
 }
 
-@-moz-viewport { width: device-width; scale:1;}
-@-ms-viewport { width: device-width; scale:1;}
-@-o-viewport { width: device-width; scale:1;}
-@webkit-viewport { width: device-width; scale:1;}
-@viewport { width: device-width; scale:1;}
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-o-viewport { width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1;}
 
 html {
   box-sizing: border-box;
@@ -380,41 +380,59 @@ banner-text a{
   padding: 0 0 0 2em;
 }
 
-.banner-text a{
-  color:white;
-  text-decoration:underline;
+.activities li{
+  list-style-type:none;
+  padding-right:2em;
 }
 
 /*-------------*/
 
-.footer-nav {
-  margin: 0;
-  text-align:left;
-  padding: 0;
-}
-
 footer {
-  border-top-style: solid;
-  border-top-width: thin;
-  margin: 0 1em 0 1em;
+  padding:1em;
+  background-color:orange;
 }
 
 .contact {
   padding: 0;
 }
-/*-------------*/
 
-/*-------media screen 50em------*/
-@media only screen and (min-width:50em){
+.contact li {
+  list-style-type:none;
+}
+
+.footer-nav {
+  margin: 0;
+  text-align:left;
+  padding: 0;
+  list-style-type:none;
+}
+
+/*-------media screen 43em------*/
+@media only screen and (min-width:43em){
+
+  footer-1 {
+    width:40%;
+    float:left;
+    margin:0;
+    padding:0;
+  }
+
   .footer-nav {
+    clear:both;
     margin: 0;
-    text-align:left;
     padding: 0;
   }
 
-  footer {
-    border-top-style: solid;
-    border-top-width: thin;
-    margin: 0 1em 0 1em;
+  footer-nav li {
+    display: inline-block;
+    padding: 1em;
+  }
+}
+
+/*-------media screen 43em------*/
+@media only screen and (min-width:43em){
+
+  .footer-nav li{
+    padding:1em 2.5em;
   }
 }
